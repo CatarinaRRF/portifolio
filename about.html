@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Catarina de Freitas</title>
+<link rel="icon" type="image/svg+xml" href="images/code.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="templatemo-621-luminary-style.css">
+</head>
+<body>
+
+<svg class="grain" width="100%" height="100%">
+  <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="5" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  <rect width="100%" height="100%" filter="url(#n)"/>
+</svg>
+<div class="atmosphere"></div>
+
+<nav class="top-nav" id="topNav">
+  <a href="index.html" class="nav-brand">
+    <img src="images/code.svg" style="width: auto; height: 20px; padding-top:5px" alt="logo">
+    Catarina<span>de Freitas</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html" aria-current="page">About</a></li>
+    
+  </ul>
+  <a href="mailto:your-email@example.com" class="nav-cta">Contact Me</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span class="toggle-bar"></span><span class="toggle-bar"></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-inner">
+    <div class="mobile-menu-links">
+      <a href="index.html" class="mobile-menu-link" data-index="01">Home</a>
+      <a href="projects.html" class="mobile-menu-link" data-index="02">Projects</a>
+      <a href="about.html" class="mobile-menu-link" data-index="03">About</a>
+      
+    </div>
+  </div>
+</div>
+
+<nav class="side-panel left" aria-label="Scroll indicators">
+  <span class="side-label">Scroll</span>
+  <div class="side-track"><div class="side-track-fill" id="leftTrack"></div></div>
+  <div class="side-dot active"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-readout" id="scrollPct">00</div>
+</nav>
+
+<nav class="side-panel right" aria-label="Status indicators">
+  <span class="side-label">About</span>
+  <div class="side-track"><div class="side-track-fill" id="rightTrack"></div></div>
+  <div class="side-dot active"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-readout">BIO</div>
+</nav>
+
+<main class="main">
+
+  <!-- Intro -->
+  <section class="about-page-intro">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="about-intro-copy">
+      <div class="about-page-portrait reveal reveal-d2">
+        <img src="images\Untitled.jpg" alt="Portrait of Catarina de Freitas">
+      </div>
+        <p class="section-tag reveal">About me</p>
+      <h1 class="section-title reveal reveal-d1">Hi, <b>I'm Catarina de Freitas</b>!</h1>
+      
+      <p class="section-body reveal reveal-d2">I'm a Bioinformatician and biotechnology professional with hands-on
+            experience developing solutions for life sciences using R, Python, and
+            reproducible bioinformatics workflows. Experienced in applying statistical analysis, data
+            visualization, and software development to support scientific decision-
+            making. Passionate about solving scientific challenges through data and
+            continuously expanding my expertise in bioinformatics and clinical
+            research.
+      </p>
+    </div>
+
+    <div class="about-info-panel reveal reveal-d2">
+      <div class="about-info-item">
+        <span class="about-info-label">Education</span>
+        <strong> Bachelor's degree in Biotechnology</strong>
+        <p>Federal University of Uberlandia (UFU), Patos de Minas campus</p>
+        <strong>Associate degree in Environment</strong>
+        <p>Federal Center for Technological Education of Minas Gerais (CEFET-MG)</p>
+      </div>
+      <div class="about-info-item">
+        <span class="about-info-label">Languages</span>
+        <p>Portuguese and English</p>
+      </div>
+      <div class="about-info-item">
+        <span class="about-info-label">Based in</span>
+        <p>Brazil, working remotely</p>
+      </div>
+      <div class="about-info-item">
+        <span class="about-info-label">Contact</span>
+        <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="section timeline-section" aria-labelledby="timeline-title">
+    <div class="section-intro reveal">
+      <p class="section-tag">Research experience</p>
+      <h2 class="section-title" id="timeline-title">Work shaped by <strong>biology, data, and collaboration</strong></h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-track" aria-hidden="true"><div class="timeline-track-fill" id="timelineTrackFill"></div></div>
+      <article class="timeline-item reveal reveal-d1">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-card">
+          <p class="timeline-year">08/2023 - 06/2025</p>
+          <h3>Bioinformatics Engineer</h3>
+          <p class="timeline-organization">LBAM - Laboratory of Bioinformatics and Molecular Analysis</p>
+          <p>Responsible for translating molecular research questions into reliable computational solutions, working with the team to design analysis workflows and deliver tools that supported reproducible research and decision-making.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal reveal-d2">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-card">
+          <p class="timeline-year">01/2025 - 07/2026</p>
+          <h3>Bioinformatician</h3>
+          <p class="timeline-organization">MicroCer Research Group - UFU</p>
+          <p>Responsible for managing microbiome data from processing through interpretation, collaborating with researchers to turn complex results into clear biological findings and publication-ready analyses.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal reveal-d1">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-card">
+          <p class="timeline-year">09/2025 - 06/2026</p>
+          <h3>Bioinformatics Analyst</h3>
+          <p class="timeline-organization">LDAM - Laboratorio de Diagnostico e Analises Moleculares</p>
+          <p>Responsible for supporting laboratory reporting and epidemiological surveillance by ensuring that clinical data were accurate, traceable, and transformed into information that teams could use quickly and confidently.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal reveal-d2">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-card">
+          <p class="timeline-year">Today</p>
+          <h3>Independent bioinformatics and data science</h3>
+          <p>I currently work with research teams to understand their biological questions, shape appropriate analytical strategies, and deliver clear, reproducible results that support their next steps.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section class="section publications" id="publications" aria-labelledby="publications-title">
+    <p class="section-tag reveal">My Latest Work</p>
+    <h2 class="section-title reveal reveal-d1" id="publications-title">Publications</h2>
+    <div class="publication-list">
+      
+      <article class="publication-item reveal reveal-d2">
+        <div class="publication-meta">2026 · Submitted</div>
+        <h3>Gut Bacterial and Fungal Microbiota Profiles Associated with Response to Neoadjuvant Chemotherapy in Breast Cancer</h3>
+        <p class="publication-venue">Breast Cancer Research and Treatment</p>
+        <p class="publication-authors">Teles, L. T.; Nimer, N. F. S.; Heidrich, V.; Costa, R. A. da; Barreto, C. C.; <strong>Freitas, C. R. R. de</strong>; Camargo, A. A.; Felipe, M. S. S.; Sousa, R. B. de; Andrade, R. V. de.</p>
+        <p class="publication-description">Characterization of gut microbiome profiles in Brazilian women with early-stage breast cancer undergoing neoadjuvant chemotherapy.</p>
+        <a class="publication-link" href="#">DOI: </a>
+      </article>
+
+      <article class="publication-item reveal reveal-d3">
+        <div class="publication-meta">2026 · Submitted</div>
+        <h3>Genomic and Culturomic Characterization of Cellulolytic Potential in Acidobacteriota Strains AB23 and AB60</h3>
+        <p class="publication-venue">Environmental Microbiology</p>
+        <p class="publication-authors">Sousa, T. G. G. de; Cordeiro, L. A. F.; <strong>Freitas, C. R. R. de</strong>; Barreto, C. C.</p>
+        <p class="publication-description">Investigation of the cellulose-degrading potential of Acidobacteriota strains AB23 and AB60 through integrated genomic and culturomic approaches.</p>
+        <a class="publication-link" href="#">DOI: </a>
+      </article>
+
+      <article class="publication-item reveal reveal-d2">
+        <div class="publication-meta">2026 · Published</div>
+        <h3>Isolamento e caracterização de bactérias associadas a briófitas na Antártica</h3>
+        <p class="publication-venue">Universidade Federal de Uberlândia - Repositório Institucional</p>
+        <p class="publication-authors"><strong>Freitas, C. R. R. de</strong>; Barreto, C. C.</p>
+        <p class="publication-description">Isolation of slow-growing oligotrophic bacteria from <em>Sanionia uncinata</em> bryophyte samples collected on King George Island, Antarctica, with 16S rRNA sequence analyses for taxonomic identification.</p>
+        <a class="publication-link" href="https://repositorio.ufu.br/handle/123456789/49053" target="_blank" rel="noopener noreferrer">View repository record</a>
+      </article>
+    </div>
+    <p class="publication-orcid reveal reveal-d3"><a class="textlink" href="https://orcid.org/0009-0002-9044-4256" target="_blank" rel="noopener noreferrer">View my complete publication record on ORCID</a></p>
+  </section>
+
+  <!-- Patents -->
+  <section class="section patents" id="patents" aria-labelledby="patents-title">
+    <h2 class="section-title reveal reveal-d1" id="patents-title">Patents</h2>
+    <div class="patent-list">
+      <article class="patent-item reveal reveal-d2">
+        <div class="patent-meta">01/2026 · BR512026000121-8</div>
+        <h3>siRNA Seeker</h3>
+        <p class="patent-venue">Instituto Nacional da Propriedade Industrial</p>
+        <p class="publication-authors">Amaral, L. R. do; Gomes, M. de S.; Paula, V. B. de; <strong>Freitas, C. R. R. de</strong>; Silva, F. P.; et al.</p>
+        <p class="publication-description">A bioinformatics platform that automates the design and evaluation of siRNA candidates based on literature-derived rules.</p>
+        <a class="publication-link" href="https://nanogene.com.br/tools" target="_blank" rel="noopener noreferrer">Visit the NanoGene tools page</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+    <p class="section-tag reveal">Gallery</p>
+    <h2 class="section-title reveal reveal-d1" id="gallery-title">People, places, and <strong>research in practice</strong></h2>
+    <div class="gallery-slider reveal reveal-d2" data-gallery-slider>
+      <div class="gallery-slides">
+        <figure class="gallery-slide active">
+          <img src="images\gallery\1.jpeg" alt="Catarina de Freitas">
+          <figcaption><strong>MicroCer group happy hour</strong><span>2026 · Group social event.</span></figcaption>
+        </figure>
+        <figure class="gallery-slide">
+          <img src="images\gallery\2.jpg" alt="Catarina de Freitas at work">
+          <figcaption><strong>Graduation ceremony</strong><span>2026 · Group photograph with Professor Guilherme Freitas, laboratory leader.</span></figcaption>
+        </figure>
+        <figure class="gallery-slide">
+          <img src="images\gallery\3.jpeg" alt="Cerrado research site">
+          <figcaption><strong>MicroCer at the Brazilian Congress of Microbiology</strong><span>2025 · Aracaju, SE · Scientific conference participation.</span></figcaption>
+        </figure>
+        <figure class="gallery-slide">
+          <img src="images\gallery\4.jpg" alt="Microbiome analysis figure">
+          <figcaption><strong>Thais Gonzaga's master's degree celebration</strong><span>2025 · MicroCer group celebration.</span></figcaption>
+        </figure>
+        <figure class="gallery-slide">
+          <img src="images\gallery\5.jpg" alt="Laboratory analysis placeholder">
+          <figcaption><strong>Poster award winners at Biotechnology Week</strong><span>2025 · V Biotechnology Symposium · Poster award recognition.</span></figcaption>
+        </figure>
+      </div>
+      <div class="gallery-dots" role="tablist" aria-label="Gallery slides">
+        <button class="gallery-arrow gallery-arrow-prev" type="button" aria-label="Show previous gallery image">&lt;</button>
+        <button class="gallery-dot active" type="button" role="tab" aria-selected="true" aria-label="Show slide 1"></button>
+        <button class="gallery-dot" type="button" role="tab" aria-selected="false" aria-label="Show slide 2"></button>
+        <button class="gallery-dot" type="button" role="tab" aria-selected="false" aria-label="Show slide 3"></button>
+        <button class="gallery-dot" type="button" role="tab" aria-selected="false" aria-label="Show slide 4"></button>
+        <button class="gallery-dot" type="button" role="tab" aria-selected="false" aria-label="Show slide 5"></button>
+        <button class="gallery-arrow gallery-arrow-next" type="button" aria-label="Show next gallery image">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA  -->
+  <section class="footer-cta about-page-footer" id="cta">
+    <p class="section-tag reveal">Let's work together</p>
+    <h2 class="section-title reveal reveal-d1">Have a biological question?<br><strong>Let's find the answer.</strong></h2>
+    <div class="footer-ctas reveal reveal-d2">
+      <a href="mailto:catarinafreitas@gmail.com" class="btn-primary">Email Me</a>
+      <a href="https://www.fiverr.com/" class="btn-secondary" target="_blank" rel="noopener noreferrer">Find Me on Fiverr</a>
+    </div>
+  </section>
+
+  <!-- Footer  -->
+  <section class="footer-cta">
+    <div class="footer-bar reveal reveal-d4" style="margin-top: 80px;">
+      <div class="footer-brand">Catarina de Freitas &mdash; 2026</div>
+      <div class="footer-links">
+        <a href="#" data-legal-modal="privacy">Privacy</a>
+        <a href="#" data-legal-modal="terms">Terms</a>
+        <span class="footer-credit">Status: <a href="#cta">Open to Work</a></span>
+        <span class="footer-credit">Design: <a href="https://templatemo.com" target="_blank" rel="nofollow">TemplateMo</a></span>
+        <span class="footer-credit">Images: <a href="https://unsplash.com" target="_blank" rel="nofollow">Unsplash</a></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+<script src="templatemo-621-luminary-script.js"></script>
+</body>
+</html>

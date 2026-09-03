@@ -15,7 +15,7 @@ https://templatemo.com/tm-621-luminary
 -->
 </head>
 
-
+{% comment %}  {% endcomment %}
 <body>
 
 <svg class="grain" width="100%" height="100%">
@@ -26,40 +26,28 @@ https://templatemo.com/tm-621-luminary
 
 <!-- Nav -->
 <nav class="top-nav" id="topNav">
-  <a href="#" class="nav-brand"> 
+  <a href="index.html" class="nav-brand"> 
     <img src="images/code.svg" style="width: auto; height: 20px; padding-top:5px" alt="logo">
     Catarina<span>de Freitas</span>
   </a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#features">Services</a></li>
-    <li><a href="#integrations">Projects</a></li>
-    <li><a href="#testimonials">Testimonials</a></li>
-    <!--<li><a href="#pricing">Pricing</a></li>-->
-    <li><a href="#faq">FAQ</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    
   </ul>
-  <a href="#pricing" class="nav-cta">Get Started</a>
+  <a href="mailto:your-email@example.com" class="nav-cta">Contact Me</a>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
     <span class="toggle-bar"></span><span class="toggle-bar"></span>
   </button>
 </nav>
 
-<!-- Mobile Menu -->
+  <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <div class="mobile-menu-inner">
     <div class="mobile-menu-links">
-      <a href="#" class="mobile-menu-link" data-index="01">Home</a>
-      <a href="#features" class="mobile-menu-link" data-index="02">Services</a>
-      <!--<a href="#pricing" class="mobile-menu-link" data-index="03">Pricing</a>-->
-      <a href="#testimonials" class="mobile-menu-link" data-index="04">Testimonials</a>
-      <a href="#integrations" class="mobile-menu-link" data-index="05">Projects</a>
-      <a href="#faq" class="mobile-menu-link" data-index="06">FAQ</a>
-      <a href="#cta" class="mobile-menu-link" data-index="07">Get Started</a>
-    </div>
-    <div class="mobile-menu-footer">
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#">Contact</a>
+      <a href="index.html" class="mobile-menu-link" data-index="01">Home</a>
+      <a href="projects.html" class="mobile-menu-link" data-index="02">Projects</a>
+      <a href="about.html" class="mobile-menu-link" data-index="03">About</a>
     </div>
   </div>
 </div>
@@ -78,7 +66,7 @@ https://templatemo.com/tm-621-luminary
 </nav>
 
 <nav class="side-panel right" aria-label="Status indicators">
-  <span class="side-label">Status</span>
+  <span class="side-label">Home</span>
   <div class="side-track"><div class="side-track-fill" id="rightTrack"></div></div>
   <div class="side-dot"></div>
   <div class="side-dot"></div>
@@ -86,7 +74,7 @@ https://templatemo.com/tm-621-luminary
   <div class="side-dot"></div>
   <div class="side-dot"></div>
   <div class="side-dot"></div>
-  <div class="side-readout">LMN</div>
+  <div class="side-readout">BIO</div>
 </nav>
 
 <main class="main">
@@ -96,27 +84,27 @@ https://templatemo.com/tm-621-luminary
     <div class="hero-grid"></div>
     <div class="hero-badge">
       <div class="hero-badge-dot"></div>
-      <span style="color:#9cdb4d">Available for Freelance</span>
+      <span style="color:#9cdb4d" data-i18n="hero.badge">Available for Freelance</span>
     </div>
     
-    <p class="hero-sub" style="margin: 28px auto 8px;">
+    <!--<p class="hero-sub" style="margin: 28px auto 8px;">
       Hi , i'm <strong>Catarina de Freitas</strong>, a bioinformatics and data scientist.
-    </p>
-    <h1>Any omics. Any dataset.<br><em>One bioinformatics expert.</em></h1> 
-    <p class="hero-sub">
+    </p>-->
+    <h1><span data-i18n="hero.line1">Any omics. Any dataset.</span><br><em data-i18n="hero.line2">One bioinformatics expert.</em></h1> 
+    <p class="hero-sub" data-i18n="hero.subtitle">
       Whether you're working with genomics, transcriptomics, proteomics,
       if your project generates biological data, I can help you extract meaningful insights.
     </p>
     <div class="hero-ctas">
-      <a href="#pricing" class="btn-primary">View Portfolio</a>
-      <a href="#features" class="btn-secondary">Let's Work Together</a>
+      <a href="#about" class="btn-primary" data-i18n="hero.about">About Me</a>
+      <a href="projects.html" class="btn-secondary" data-i18n="hero.portfolio">View Portfolio</a>
     </div>
     <div class="hero-metrics">
-      <!--
+      
       <div class="metric">
         <div class="metric-value"><span class="counter" data-target="100" data-decimals="1">0.0</span><span>%</span></div>
         <div class="metric-label">Happy clients</div>
-      </div>-->
+      </div>
       <div class="metric">
         <div class="metric-value"><span class="counter" data-target="20" data-decimals="0">0</span><span>+</span></div>
         <div class="metric-label">Scientific Collaborations</div>
@@ -157,108 +145,158 @@ https://templatemo.com/tm-621-luminary
   </div>
 
   <!-- ═══ ABOUT ═══ -->
-  <section class="section section-center" id="about">
-    <p class="section-tag reveal">About me</p>
-    <h2 class="section-title reveal reveal-d1">Hi, i'm <strong>Catarina de Freitas</strong></h2>  
-    <div class="feature reveal" style="display: flex; align-items: center; padding: 10px 0;justify-content: center;">
-      <div class="feature-visual">
-          <img src="images/Untitled.jpg" alt="Intelligent automation dashboard">
+  <section class="section about-showcase" id="about">
+    <div class="about-shell reveal">
+      <div class="about-intro">
+        <p class="section-tag" data-i18n="index.sectionTagAbout">About me</p>
+        <h2 class="section-title reveal reveal-d1"><span data-i18n="index.aboutTitle">Hi, I'm </span><strong>Catarina de Freitas</strong></h2>
       </div>
-    </div> 
-    <br>
-    <p class="section-body reveal reveal-d2" style="max-width: 100%;">
-      I am a Bioinformatician and Data Scientist with a degree in Biotechnology from the Federal University of Uberlândia (UFU) 
-      and specialized training in Data Science and Bioinformatics. With over four years of experience, I develop machine learning, 
-      statistical, and data engineering solutions for high-dimensional biological and environmental datasets. Proficient in Python, 
-      R, SQL, and data visualization tools, I have extensive experience handling large-scale data, building end-to-end analytical 
-      pipelines, deploying web-based machine learning applications, and automating reproducible bioinformatics workflows.
-    </p>
-    <br>
-    <br>
 
-    <!--CONTACT INFO-->
-    <p class="section-tag" style="">Contact Info</p>
-    <div class="integrations-grid reveal reveal-d3 visible">
-      <div class="integration-item" >
-        <a href="https://github.com/CatarinaRRF" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important;">
-          <div class="integration-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+      <div class="about-grid">
+        <div class="about-visual feature-visual">
+          <img src="images\god_why.jpg" alt="Catarina de Freitas portrait">
+        </div>
+
+        <div class="about-copy">
+          <p class="section-body reveal reveal-d2" data-i18n="index.aboutCopy">
+            I am a Bioinformatician and Data Scientist with a degree in Biotechnology from the Federal University of Uberlândia (UFU)
+            and specialized training in Data Science and Bioinformatics. With over four years of experience, I develop machine learning,
+            statistical, and data engineering solutions for high-dimensional biological and environmental datasets.
+            
+          </p>
+
+          <div class="about-pills" aria-label="Core skills">
+            <span>Python</span>
+            <span>R</span>
+            <span>SQL</span>
+            <span>Machine Learning</span>
+            <span>Omics Analysis</span>
+            <span>Data Visualization</span>
           </div>
-          <div class="integration-name" >GitHub</div>
-        </a>
+          <br><a class="textlink" href="about.html">Read more about me</a>
+        </div>
       </div>
-      <div class="integration-item">
-        <a href="https://www.linkedin.com/in/catarinafreitaspt/" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important;">
-          <div class="integration-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" /></svg>
+
+      <div class="contact-panel">
+        <p class="section-tag" data-i18n="index.contactInfo">Contact Info</p>
+        <div class="integrations-grid reveal reveal-d3 visible">
+          <div class="integration-item">
+            <a href="https://github.com/CatarinaRRF" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important;">
+              <div class="integration-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+              </div>
+              <div class="integration-name">GitHub</div>
+            </a>
           </div>
-          <div class="integration-name">Linkedin</div>
-        </a>
-      </div>
-      <div class="integration-item">
-        <a href="https://www.fiverr.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important;">
-          <div class="integration-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-fiverr"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 3h-2a6 6 0 0 0 -6 6h-3v4h3v8h4v-7h4v7h4v-11h-8v-1.033a1.967 1.967 0 0 1 2 -1.967h2v-4" /></svg>
+          <div class="integration-item">
+            <a href="https://www.linkedin.com/in/catarinafreitaspt/" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important;">
+              <div class="integration-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" /></svg>
+              </div>
+              <div class="integration-name">Linkedin</div>
+            </a>
           </div>
-          <div class="integration-name">Fiverr</div>
-        </a>
-      </div>
-      <div class="integration-item">
-        <a href="https://orcid.org/0009-0002-9044-4256" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important;">
-          <div class="integration-icon">
-            <svg fill="#9CA3AF" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 16 3 C 8.8321388 3 3 8.832144 3 16 C 3 23.167856 8.8321388 29 16 29 C 23.167861 29 29 23.167856 29 16 C 29 8.832144 23.167861 3 16 3 z M 16 5 C 22.086982 5 27 9.9130223 27 16 C 27 22.086978 22.086982 27 16 27 C 9.9130183 27 5 22.086978 5 16 C 5 9.9130223 9.9130183 5 16 5 z M 11 8 A 1 1 0 0 0 11 10 A 1 1 0 0 0 11 8 z M 10 11 L 10 22 L 12 22 L 12 11 L 10 11 z M 14 11 L 14 12 L 14 22 L 18.5 22 C 21.525577 22 24 19.525577 24 16.5 C 24 13.474423 21.525577 11 18.5 11 L 14 11 z M 16 13 L 18.5 13 C 20.444423 13 22 14.555577 22 16.5 C 22 18.444423 20.444423 20 18.5 20 L 16 20 L 16 13 z"></path></g></svg>
+          <div class="integration-item">
+            <a href="https://www.fiverr.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important;">
+              <div class="integration-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-fiverr"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 3h-2a6 6 0 0 0 -6 6h-3v4h3v8h4v-7h4v7h4v-11h-8v-1.033a1.967 1.967 0 0 1 2 -1.967h2v-4" /></svg>
+              </div>
+              <div class="integration-name">Fiverr</div>
+            </a>
           </div>
-          <div class="integration-name">ORCID</div>
-        </a>
+          <div class="integration-item">
+            <a href="https://orcid.org/0009-0002-9044-4256" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important;">
+              <div class="integration-icon">
+                <svg fill="#9CA3AF" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 16 3 C 8.8321388 3 3 8.832144 3 16 C 3 23.167856 8.8321388 29 16 29 C 23.167861 29 29 23.167856 29 16 C 29 8.832144 23.167861 3 16 3 z M 16 5 C 22.086982 5 27 9.9130223 27 16 C 27 22.086978 22.086982 27 16 27 C 9.9130183 27 5 22.086978 5 16 C 5 9.9130223 9.9130183 5 16 5 z M 11 8 A 1 1 0 0 0 11 10 A 1 1 0 0 0 11 8 z M 10 11 L 10 22 L 12 22 L 12 11 L 10 11 z M 14 11 L 14 12 L 14 22 L 18.5 22 C 21.525577 22 24 19.525577 24 16.5 C 24 13.474423 21.525577 11 18.5 11 L 14 11 z M 16 13 L 18.5 13 C 20.444423 13 22 14.555577 22 16.5 C 22 18.444423 20.444423 20 18.5 20 L 16 20 L 16 13 z"></path></g></svg>
+              </div>
+              <div class="integration-name">ORCID</div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-      
- 
   </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section class="section" id="essays" aria-labelledby="essays-title">
+      <div class="wrap">
+        <div class="essays-head reveal is-visible">
+          <h2 id="essays-title" data-i18n="index.recentProjects">Recent Projects</h2> 
+        </div>
+
+        <ol class="essay-list">
+          <li class="essay reveal is-visible">
+            <div class="essay-top">
+              <span class="folio">01</span>
+              <h3 class="essay-title"><a href="POSTS/IBGE.html">Beneath the Moss Carpets of a Cerrado Gallery Forest</a></h3>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="essay-meta">31 Aug 2026 · 12 min</span>
+            </div>
+            <p class="essay-excerpt">A survey of moss-associated bacteria at the Roncador Ecological Reserve near Brasília reveals a striking split in community structure.</p>
+            <div class="essay-tags">
+              <a class="tag" href="projects.html#latest-post">Data Science</a><a class="tag" href="projects.html#microbiome-data">Microbiome Data</a>
+            </div>
+          </li>
+
+
+        </ol>
+
+        <div class="essays-more reveal">
+          <a class="textlink" href="projects.html">Browse the full archive
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+  </section>
+
 
   <div class="silk-divider reveal"></div> 
  
   <!-- ═══ FEATURES ═══ -->
   <section class="section" id="features">
+    <div class="section-intro reveal">
+      <p class="section-tag">Services</p>
+      <h2 class="section-title reveal reveal-d1">Bioinformatics support for <strong>research, discovery, and decision-making</strong></h2>
+    </div>
 
     <div class="feature reveal">
       <div class="feature-visual">
-        <img src="images/tm-luminary-01.jpg" alt="Intelligent automation dashboard">
+        <img src="images/tm-luminary-01.jpg" alt="Genome analysis workflow">
       </div>
       <div class="feature-content">
         <div class="feature-number">01</div>
         <p class="section-tag">Genomics</p>
-        <h2 class="section-title">End-to-end <strong>genomic analysis </strong></h2> 
+        <h2 class="section-title">End-to-end <strong>genomic analysis</strong></h2>
         <p class="section-body">
-          From raw sequencing reads to high-quality biological insights. Services include quality control, genome assembly, variant calling, genome annotation, comparative genomics, phylogenetics, and custom bioinformatics pipelines.
+          I support projects from raw sequencing data to interpretable biological findings, including QC, assembly, variant calling, annotation, comparative genomics, phylogenetic analysis, and tailored pipelines designed for research teams and biotech workflows.
         </p>
       </div>
     </div>
 
     <div class="feature reverse reveal">
       <div class="feature-visual">
-        <img src="images/tm-luminary-02.jpg" alt="Predictive analytics visualization">
+        <img src="images/tm-luminary-02.jpg" alt="Transcriptomics and gene-expression analysis">
       </div>
       <div class="feature-content">
         <div class="feature-number">02</div>
         <p class="section-tag">Transcriptomics</p>
-        <h2 class="section-title">Unlock <strong>gene expression</strong> insights</h2> 
+        <h2 class="section-title">Clear <strong>gene-expression</strong> insights</h2>
         <p class="section-body">
-          Services include differential expression, transcript quantification, functional enrichment (GO/KEGG), pathway analysis, clustering, PCA, heatmaps, and scientific visualization.
+          From differential expression to pathway interpretation, I help translate complex transcriptomic data into actionable biological insight through normalization, quantification, enrichment analysis, clustering, PCA, visual summaries, and publication-ready figures.
         </p>
       </div>
     </div>
 
     <div class="feature reveal">
       <div class="feature-visual">
-        <img src="images/tm-luminary-03.jpg" alt="Unified team workspace">
+        <img src="images/tm-luminary-03.jpg" alt="Multi-omics and data science workflow">
       </div>
       <div class="feature-content">
         <div class="feature-number">03</div>
-        <p class="section-tag">Multi-omics</p> 
-        <h2 class="section-title"><strong>Custom solutions</strong></h2>
+        <p class="section-tag">Custom analytics</p>
+        <h2 class="section-title"><strong>Research-driven</strong> computational solutions</h2>
         <p class="section-body">
-         Computational analyses for proteomics and integrated omics. Services include protein modeling, molecular docking, Ramachandran plot validation, microbiome analyses, machine learning, and advanced scientific visualization.
+          I develop custom analyses for microbiome studies, protein structure evaluation, molecular docking and machine-learning workflows that turn complex datasets into client-facing conclusions.
         </p>
       </div>
     </div>
@@ -266,9 +304,9 @@ https://templatemo.com/tm-621-luminary
   </section>
 
   <div class="silk-divider reveal"></div>
-
+ 
   <!-- ═══ PROJECTS ═══ -->
-  <section class="section section-center" id="integrations">
+  <!--<section class="section section-center" id="integrations">
     <p class="section-tag reveal">Featured Projects</p>
     <h2 class="section-title reveal reveal-d1">Discover how I can<strong> help</strong> your research</h2>   
     <p class="section-body reveal reveal-d2">Explore real projects developed for research groups, laboratories, and biotechnology.</p>
@@ -347,7 +385,7 @@ https://templatemo.com/tm-621-luminary
         <div class="integration-name">GitHub</div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <div class="silk-divider reveal"></div>
 
@@ -358,34 +396,34 @@ https://templatemo.com/tm-621-luminary
 
     <div class="testimonials-grid">
       <div class="testimonial-card reveal reveal-d1">
-        <p class="testimonial-quote">"Luminary replaced three tools we were paying for separately. The workflow builder alone saved our ops team 20 hours a week."</p>
+        <p class="testimonial-quote">"Catarina helped us organize and interpret complex microbiome data, turning detailed computational results into clear findings that our research team could understand and use."</p>
         <div class="testimonial-author">
-          <div class="testimonial-avatar">AK</div>
+          <div class="testimonial-avatar">MC</div>
           <div>
-            <div class="testimonial-name">Anna Kim</div>
-            <div class="testimonial-role">VP Operations, Arcline Systems</div>
+            <div class="testimonial-name">MICROCER</div>
+            <div class="testimonial-role">Laboratory collaboration</div>
           </div>
         </div>
       </div>
 
       <div class="testimonial-card reveal reveal-d2">
-        <p class="testimonial-quote">"The predictive insights caught a supply chain disruption 72 hours before it would have hit us. That's not incremental — that's transformational."</p>
+        <p class="testimonial-quote">"Catarina supported our epidemiological data work from analysis through implementation. Her contributions to the database and dashboard made our information easier to organize, explore, and communicate."</p>
         <div class="testimonial-author">
-          <div class="testimonial-avatar">MR</div>
+          <div class="testimonial-avatar">LD</div>
           <div>
-            <div class="testimonial-name">Marcus Reeves</div>
-            <div class="testimonial-role">CTO, Nova Engineering</div>
+            <div class="testimonial-name">LDAM</div>
+            <div class="testimonial-role">Laboratory collaboration</div>
           </div>
         </div>
       </div>
 
       <div class="testimonial-card reveal reveal-d3">
-        <p class="testimonial-quote">"We evaluated six platforms. Luminary was the only one our engineers didn't complain about. Clean API, real documentation, zero bloat."</p>
+        <p class="testimonial-quote">"As a bioinformatician, Catarina contributed valuable computational expertise to our work. She connected biological questions with practical analysis workflows and presented the results in a clear, reproducible way."</p>
         <div class="testimonial-author">
-          <div class="testimonial-avatar">SL</div>
+          <div class="testimonial-avatar">LB</div>
           <div>
-            <div class="testimonial-name">Sarah Lin</div>
-            <div class="testimonial-role">Head of Engineering, Prism Analytics</div>
+            <div class="testimonial-name">LBAM</div>
+            <div class="testimonial-role">Laboratory collaboration</div>
           </div>
         </div>
       </div>
@@ -531,43 +569,59 @@ https://templatemo.com/tm-621-luminary
 
   <!-- ═══ CTA ═══ -->
   <section class="footer-cta" id="cta">
-    <p class="section-tag reveal">Ready to Start</p>
-    <h2 class="section-title reveal reveal-d1">Your team's best work<br><strong>starts here</strong></h2>
-    <p class="section-body reveal reveal-d2" style="margin: 0 auto;">14-day free trial. No credit card. Cancel anytime.</p>
+    <p class="section-tag reveal">Let's Work Together</p>
+    <h2 class="section-title reveal reveal-d1"><span>Have a biological question?</span><br><strong>Let's find the answer.</strong></h2>
+    <p class="section-body reveal reveal-d2" style="margin: 0 auto;">Tell me about your project and we can discuss how bioinformatics can support your research.</p>
     <div class="footer-ctas reveal reveal-d3">
-      <a href="#" class="btn-primary">Start Free Trial</a>
-      <a href="#" class="btn-secondary">Talk to Sales</a>
+      <a href="mailto:catarinafreitas@gmail.com" class="btn-primary">Email Me</a>
+      <a href="https://www.fiverr.com/" class="btn-secondary" target="_blank" rel="noopener noreferrer">Find Me on Fiverr</a>
     </div>
   </section>
 
   <!-- ═══ FAQ ═══ -->
   <section class="section section-center" id="faq">
-    <p class="section-tag reveal">Frequently Asked</p>
-    <h2 class="section-title reveal reveal-d1">Questions we hear <strong>most often</strong></h2>
+    <p class="section-tag reveal" data-i18n="index.faqTitle">FAQ</p>
+    <h2 class="section-title reveal reveal-d1"><span data-i18n="index.faqTitle">Frequently Asked Questions</span></h2>
 
     <div class="faq-list reveal reveal-d2">
       <div class="faq-controls">
         <button class="faq-toggle-all" id="faqToggleAll">Expand All</button>
       </div>
       <div class="faq-item">
-        <button class="faq-question">How long does onboarding take?<span class="faq-icon"></span></button>
-        <div class="faq-answer"><div class="faq-answer-inner">Most teams are fully operational within 48 hours. Our onboarding wizard walks you through connecting your tools, importing existing workflows, and inviting team members. Enterprise customers receive a dedicated onboarding specialist.</div></div>
+        <button class="faq-question">What do I receive at the end of the project?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Every project includes a complete set of analysis deliverables: a written report describing the methods, results, and key analytical decisions; publication-ready figures with their underlying source data; methods and statistical sections suitable for direct inclusion in a manuscript; and a documented, version-controlled code repository. The project also includes a handover session to help your team understand and independently rerun the analysis.</div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Can I migrate from my current platform?<span class="faq-icon"></span></button>
-        <div class="faq-answer"><div class="faq-answer-inner">Yes. We provide migration tools for Zapier, Make, and n8n workflows. Our team handles the heavy lifting for enterprise migrations — most are completed within one week with zero downtime.</div></div>
+        <button class="faq-question">What types of biological data can you analyze?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Projects can involve a broad range of high-dimensional biological datasets, including NGS data, single-cell transcriptomics, proteomics and integrated multi-omics datasets.</div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">What happens when I exceed my plan limits?<span class="faq-icon"></span></button>
-        <div class="faq-answer"><div class="faq-answer-inner">We never cut you off mid-workflow. You'll receive a notification at 80% and 100% of your limit. Overages are billed at a transparent per-unit rate, or you can upgrade your plan at any time.</div></div>
+        <button class="faq-question">Which programming languages do you use?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Analyses are primarily developed in R and Python, selected according to the requirements of the project and the characteristics of the data. Where appropriate, established scientific libraries and reproducible computational workflows are incorporated into the analysis.</div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Is my data encrypted?<span class="faq-icon"></span></button>
-        <div class="faq-answer"><div class="faq-answer-inner">All data is encrypted at rest (AES-256) and in transit (TLS 1.3). Enterprise plans include dedicated encryption keys, SOC 2 Type II compliance, and optional data residency controls for EU and APAC regions.</div></div>
+        <button class="faq-question">Where is the analysis performed?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Analyses can be performed using our computational infrastructure or within your own environment. This can include institutional servers and high-performance computing clusters when required by the size or complexity of the dataset.</div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Do you offer a free trial?<span class="faq-icon"></span></button>
-        <div class="faq-answer"><div class="faq-answer-inner">Every plan includes a 14-day free trial with full feature access. No credit card required. At the end of the trial, you choose your plan — or your workspace converts to a limited free tier automatically.</div></div>
+        <button class="faq-question">Do I need to know bioinformatics or programming to work with you?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">No. You do not need to be a computational specialist to commission an analysis. The project is structured around the biological research question, while the computational workflow, statistical analysis, and documentation are developed as part of the service.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How does a project start?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Every project begins with a free initial consultation. We discuss the biological question, available or planned data, experimental design, and desired research outcome. This allows the analytical scope to be defined before any work begins.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you provide a written proposal before starting?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. Following the initial consultation, you receive a written proposal defining the scope of work, deliverables, estimated timeline, and price. The terms are agreed upon before the project begins.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How is pricing determined?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Defined projects are generally offered at a fixed price based on the agreed scope and deliverables. Advisory or consulting work can instead be provided at an hourly rate. Pricing is established in the written proposal before work begins.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What information do you need before providing a proposal?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">The initial consultation is used to understand the biological question, experimental design, available or expected datasets, desired analyses, and intended outcome. From this information, the analytical scope and appropriate deliverables can be defined.</div></div>
       </div>
     </div>
   </section>
@@ -577,8 +631,8 @@ https://templatemo.com/tm-621-luminary
     <div class="footer-bar reveal reveal-d4" style="margin-top: 80px;">
       <div class="footer-brand">Catarina de Freitas &mdash; 2026</div>
       <div class="footer-links">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
+        <a href="#" data-legal-modal="privacy">Privacy</a>
+        <a href="#" data-legal-modal="terms">Terms</a>
         <span class="footer-credit">Status: <a href="#cta">Open to Work</a></span>
         <span class="footer-credit">Design: <a href="https://templatemo.com" target="_blank" rel="nofollow">TemplateMo</a></span>
         <span class="footer-credit">Images: <a href="https://unsplash.com" target="_blank" rel="nofollow">Unsplash</a></span>
@@ -587,6 +641,17 @@ https://templatemo.com/tm-621-luminary
   </section>
 
 </main>
+
+<div class="legal-modal-backdrop" id="legalModalBackdrop" aria-hidden="true">
+  <div class="legal-modal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <button class="legal-modal-close" id="legalModalClose" aria-label="Close dialog">×</button>
+    <p class="section-tag legal-modal-kicker">Legal</p>
+    <h3 id="legalModalTitle">Privacy Policy</h3>
+    <div class="legal-modal-body" id="legalModalBody">
+      <p>Privacy information will load here.</p>
+    </div>
+  </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
